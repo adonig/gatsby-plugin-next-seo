@@ -57,7 +57,7 @@
     "test:e2e:quick": "jest --verbose --runInBand --config e2e/jest.config.js",
     "test:watch": "jest  --watch --verbose=false --coverage=false",
     "typecheck": "tsc --noEmit",
-    "postinstall": "yarn build"
+    "postinstall": "yarn run clean:build && yarn run build:types && yarn run build:ts"
   },
   "husky": {
     "hooks": {
