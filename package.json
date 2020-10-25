@@ -56,7 +56,8 @@
     "test:e2e:develop": "cross-env EXAMPLE_COMMAND=develop yarn test:e2e",
     "test:e2e:quick": "jest --verbose --runInBand --config e2e/jest.config.js",
     "test:watch": "jest  --watch --verbose=false --coverage=false",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "postinstall": "yarn build"
   },
   "husky": {
     "hooks": {
